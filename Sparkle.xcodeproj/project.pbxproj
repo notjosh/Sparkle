@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3772FEA913DE0B6B00F79537 /* SUVersionDisplayProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 3772FEA813DE0B6B00F79537 /* SUVersionDisplayProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		428827C11830E9FA00A993C6 /* SUAutomaticUpdateAndInstallDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 428827BF1830E9FA00A993C6 /* SUAutomaticUpdateAndInstallDriver.h */; };
+		428827C21830E9FA00A993C6 /* SUAutomaticUpdateAndInstallDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 428827C01830E9FA00A993C6 /* SUAutomaticUpdateAndInstallDriver.m */; };
 		525A2790133D6AE900FD8D70 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525A278F133D6AE900FD8D70 /* Cocoa.framework */; };
 		525A27A0133D6B9700FD8D70 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525A278F133D6AE900FD8D70 /* Cocoa.framework */; };
 		550347011370023A00AE7681 /* Sparkle.icns in Resources */ = {isa = PBXBuildFile; fileRef = 550347001370023A00AE7681 /* Sparkle.icns */; };
@@ -190,6 +192,8 @@
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		3772FEA813DE0B6B00F79537 /* SUVersionDisplayProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUVersionDisplayProtocol.h; sourceTree = "<group>"; };
+		428827BF1830E9FA00A993C6 /* SUAutomaticUpdateAndInstallDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUAutomaticUpdateAndInstallDriver.h; sourceTree = "<group>"; };
+		428827C01830E9FA00A993C6 /* SUAutomaticUpdateAndInstallDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUAutomaticUpdateAndInstallDriver.m; sourceTree = "<group>"; };
 		525A278F133D6AE900FD8D70 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		550347001370023A00AE7681 /* Sparkle.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Sparkle.icns; sourceTree = "<group>"; };
 		55C14BB7136EEF1500649790 /* finish_installation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finish_installation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -702,6 +706,8 @@
 				61B93A3A0DD02D6400DCD2F8 /* SUUIBasedUpdateDriver.m */,
 				61B93B250DD0FDD300DCD2F8 /* SUAutomaticUpdateDriver.h */,
 				61B93B260DD0FDD300DCD2F8 /* SUAutomaticUpdateDriver.m */,
+				428827BF1830E9FA00A993C6 /* SUAutomaticUpdateAndInstallDriver.h */,
+				428827C01830E9FA00A993C6 /* SUAutomaticUpdateAndInstallDriver.m */,
 				61B93C070DD112FF00DCD2F8 /* SUScheduledUpdateDriver.h */,
 				61B93C080DD112FF00DCD2F8 /* SUScheduledUpdateDriver.m */,
 				610134790DD2541A0049ACDF /* SUProbingUpdateDriver.h */,
@@ -778,6 +784,7 @@
 				612DCBAF0D488BC60015DBEA /* SUUpdatePermissionPrompt.h in Headers */,
 				61180BCA0D64138900B4E0D1 /* SUWindowController.h in Headers */,
 				618FA5010DAE88B40026945C /* SUInstaller.h in Headers */,
+				428827C11830E9FA00A993C6 /* SUAutomaticUpdateAndInstallDriver.h in Headers */,
 				618FA5050DAE8AB80026945C /* SUPlainInstaller.h in Headers */,
 				618FA5220DAE8E8A0026945C /* SUPackageInstaller.h in Headers */,
 				61F83F740DBFE141006FDD30 /* SUBasicUpdateDriver.h in Headers */,
@@ -1164,6 +1171,7 @@
 				61B93C0A0DD112FF00DCD2F8 /* SUScheduledUpdateDriver.m in Sources */,
 				610134740DD250470049ACDF /* SUUpdateDriver.m in Sources */,
 				6101347C0DD2541A0049ACDF /* SUProbingUpdateDriver.m in Sources */,
+				428827C21830E9FA00A993C6 /* SUAutomaticUpdateAndInstallDriver.m in Sources */,
 				61A354560DF113C70076ECB1 /* SUUserInitiatedUpdateDriver.m in Sources */,
 				6102FE4B0E07803800F85D09 /* SUDiskImageUnarchiver.m in Sources */,
 				6102FE5C0E08C7EC00F85D09 /* SUUnarchiver_Private.m in Sources */,

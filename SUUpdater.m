@@ -12,6 +12,7 @@
 #import "SUUpdatePermissionPrompt.h"
 
 #import "SUAutomaticUpdateDriver.h"
+#import "SUAutomaticUpdateAndInstallDriver.h"
 #import "SUProbingUpdateDriver.h"
 #import "SUUserInitiatedUpdateDriver.h"
 #import "SUScheduledUpdateDriver.h"
@@ -282,7 +283,7 @@ static NSString * const SUUpdaterDefaultsObservationContext = @"SUUpdaterDefault
 	// Background update checks should only happen if we have a network connection.
 	//	Wouldn't want to annoy users on dial-up by establishing a connection every
 	//	hour or so:
-	SUUpdateDriver *	theUpdateDriver = [[[([self automaticallyDownloadsUpdates] ? [SUAutomaticUpdateDriver class] : [SUScheduledUpdateDriver class]) alloc] initWithUpdater:self] autorelease];
+	SUUpdateDriver *	theUpdateDriver = [[[([self automaticallyDownloadsUpdates] ? [SUAutomaticUpdateAndInstallDriver class] : [SUScheduledUpdateDriver class]) alloc] initWithUpdater:self] autorelease];
 	
 	[NSThread detachNewThreadSelector: @selector(checkForUpdatesInBgReachabilityCheckWithDriver:) toTarget: self withObject: theUpdateDriver];
 }
